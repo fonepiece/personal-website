@@ -1,0 +1,480 @@
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+    - Normalize
+    - Box sizing
+    - Media width
+# Base
+    - Typography
+    - Elements
+    - Links
+# Components
+    - Header
+    - Main
+    - Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+html {
+	box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #282828;
+    background-color:white;
+}
+
+h2{
+	margin-top:3rem ;
+	margin-bottom: 1rem;
+    color: #040404;
+}
+
+h3 {
+	font-family: sans-serif;
+    font-size: 1.17em;
+	margin-bottom: 30px;
+	
+}
+
+h2, p {
+	font-family: sans-serif;
+	margin-bottom: 30px;
+}
+
+h4 {
+    font-size: small;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+
+@media (min-width: 50em) {
+    body {
+        margin: 2rem 4rem;
+    }
+}
+/* Elements
+--------------------------------------------- */
+section,
+aside {
+    padding: 0 1rem;
+}
+
+
+/* Links
+--------------------------------------------- */
+
+a {
+	text-decoration: none;
+}
+.nav-menu a:visited {
+    color: black;
+	text-decoration: none;
+}
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    border-radius: 3rem 3rem 3rem 3rem;
+
+    background-color: #f1b1b1;
+    color: #fff
+}
+.nav-menu a:active{
+    background-color: hsl(17, 95%, 58%);
+}
+.nav-menu a:focus {
+	outline: none ;
+}
+
+.site-main a:visited {
+	color: black;
+	text-decoration: none;
+}
+.site-main a:hover,
+.site-main a:focus {
+    border-radius: 3rem 3rem 3rem 3rem;
+    background-color: #f1b1b1;
+    color:white ;
+
+}
+.site-main a:focus {
+	outline: none ;
+}
+.site-main a:active {
+	background-color: hsl(17, 95%, 58%);;
+}
+
+.project-wrap a:visited {
+    color: black;
+	text-decoration: none;
+}
+.project-wrap a:hover,
+.project-wrap a:focus {
+    border-radius: 3rem 3rem 3rem 3rem;
+    background-color: #f1b1b1;
+    color:white 
+}
+.project-wrap a:active{
+    background-color:  hsl(17, 95%, 58%);
+}
+.project-wrap a:focus {
+	outline: none ;
+}
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.wrap-page {
+    /* This is for very large screens */
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.btn-border {
+    background: white;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    padding: 0 0.5rem;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px hsl(0deg 0% 0% / 20%);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 2px #41403E;
+}
+.paper {
+    align-self: center;
+    background: transparent;
+    padding: 1rem 1rem;
+    transition: all .5s ease;
+    color: #41403E;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px hsl(0deg 0% 0% / 20%);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 4px #41403E;
+}
+
+@media (min-width: 50em) {
+    .page-border {
+        padding: 1rem 1rem;
+        outline: none;
+        box-shadow: 20px 38px 34px -26px hsl(0deg 0% 0% / 20%);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        border: solid 2px #41403E;
+    }
+
+    .btn-border {
+        padding: 1rem 1rem;
+    }
+}
+/* Header
+--------------------------------------------- */
+.site-header {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.top-ul ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 4rem;  /* Matches the height of the .site-header */
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
+}
+
+.top-ul.toggled ul {
+    display: block;
+}
+
+.top-ul a {
+    display: block;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0c0b0b;
+}
+
+.menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+}
+
+.menu-toggle:focus {
+    border: 0;
+    outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .top-ul {
+        flex: 1 1 auto;
+        padding: 0 1rem;
+    }
+
+    .top-ul ul,
+    .top-ul.toggled ul {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 0;
+    }
+
+    .top-ul a {
+        line-height: 2rem; /* Matches the height of the .site-header */
+        padding: 0 1rem;
+    }
+
+}
+
+
+/* Main
+--------------------------------------------- */
+.page-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.page-header h2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+.page-header img {
+    width: 100%;
+    object-fit:cover;
+}
+@media (min-width: 50em) {
+
+    .page-header h2 {
+        font-size: 3rem;
+    }  
+}
+
+
+
+/* section: projects*/
+.my-projects h3{
+    text-align:center;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+.project {
+    max-width: 18.75rem;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 3px 2px #eee;  
+    text-align: center;
+    font-weight:bolder;
+}
+
+
+/* Section: About */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+#about-section{
+    background-color: #f1b1b1;
+    border-radius: 5rem;
+    padding-bottom: 1rem;
+}
+
+#about-section > h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.about-me {
+    flex: 3;
+}
+.about-sidebar {
+    flex: 2;
+}
+
+.about-sidebar h3{
+    text-align: center;
+    margin-bottom: .5rem;
+   
+}
+
+.about-me p{
+    font-size: small;
+}
+.icons-wrapper{
+    margin-right: 15px;
+    padding: 20px;
+    background-color: #fac1c1;
+    justify-content: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.icons-wrapper > div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.hobby-img {
+    height: 180px;
+}
+
+.icons-wrapper img{
+    align-items: center;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: auto;
+}
+.site-name img {
+	width: 60px;
+	height: 60px;
+}
+
+.bg-gray {
+	color: lightgray;
+}
+nav li {
+   
+    display: inline-block;
+	
+    
+}
+nav li a {
+    text-decoration: none;
+}
+
+.project-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.project{
+    margin: 1rem;
+    flex-grow: 1; 
+
+}
+@media (min-width: 50em) {
+    .about-container{
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+
+    .about-sidebar {
+        padding-left: 3rem;
+        padding-top: 5rem;  
+    }
+    
+    .site-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem;
+    }
+
+    .site-footer p {
+        margin-top: 0;
+    }
+
+    .about-me p{
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    
+}
+/* Footer
+--------------------------------------------- */
+
+.site-footer {
+    padding: 3rem;
+    background-color: #fac1c1;
+
+}
+
+.site-footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+        background: #55ACEE;
+        color: white;
+}
+.fa-instagram {
+        background: #125688;
+        color: white;
+}
+  
+
+
+
+
