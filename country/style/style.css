@@ -22,9 +22,7 @@
     
     ul {
         list-style-type: none;
-        /* Remove bullets */
         padding: 0;
-        /* Remove padding */
         margin: 0
     }
     
@@ -216,7 +214,7 @@
     
     .quotes-container {
         text-align: center;
-        border: #2828280c;
+        border: #0b0a0a;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -260,7 +258,7 @@
             margin-right: 5rem;
             border: #282828;
             border-radius: 24px;
-            background: #f3efefab;
+            background: black;
         }
         .banner h1 {
             font-size: 120px;
@@ -319,6 +317,13 @@
     }
     /* Cuisine html*/
     
+    .cuisine1 p,
+    .cuisine1 h3 {
+        text-align: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
     .food {
         display: flex;
         flex-direction: column;
@@ -347,7 +352,7 @@
             border: #282828;
             filter: drop-shadow(0px 6px 64px rgba(112, 144, 176, 0.1));
             border-radius: 24px;
-            background: #515050;
+            background: #000001;
             padding: 3rem 2rem 2rem 2rem;
         }
         .cuisine2 {
@@ -426,194 +431,7 @@
             max-width: 90rem;
         }
     }
-    /* gallery-wrapper figcaption {
-    display: block;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    position: absolute;
-    opacity: 1;
-    padding: 0 1rem;
-    top: 45%;
-    right: 0;
-    left: 0;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000000;
-    z-index: 2;
-}
-
-.gallery-wrapper .fig-photo:hover {
-    transform: scale(1.1);
-    z-index: 3;
-}
-
-.gallery-wrapper .fig-photo:hover img {
-    opacity: 1;
-}
-
-.gallery-wrapper .fig-photo:hover figcaption {
-    display: none;
-}
- */
-    /*.grid-center {
-		display: grid;
-		grid-template-columns: 1fr repeat(3, minmax(0, 16rem)) 1fr;
-		gap: 1rem;
-		padding: 2rem 1rem;
-	}
-
-
-}
-
-
-	
-
-
-
-
-
-
-
-/*
-.site-main {
-	max-width: 75rem;
-	margin: 0 auto;
-}
-
-@media (min-width: 50em) {
-
-	.site-main {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin: 6rem auto 0;
-		position: relative;
-	}
-
-	.topics {
-		display:flex
-		width: 50%;
-		order: 2;
-		position: sticky;
-		top: 6rem;
-		align-self: flex-start;
-	}
-	
-	.col-left {
-		width: 50%;
-	}
-
-}
-
-
-
-.original-price {
-	font-size: 1.25rem;
-	color: #888888;
-	text-decoration: line-through;
-}
-
-a.cart-link {
-	display: inline-block;
-	padding: 1rem 2rem;
-	font-size: 1.25rem;
-	background-color: #f62424;
-	color: #ffffff;
-	text-decoration: none;
-}
-
-
-.float-left {
-	display: block;
-	margin: 1.5rem auto;
-}
-.collage img {
-	display: block;
-	margin: 1rem auto;
-}
-
-
-
-
-
-@media (min-width: 75em) {
-
-	.collage {
-		position: relative;
-		width: 100%;
-		height: 38rem;
-	}
-
-	.collage img:hover {
-		z-index: 1000;
-	}
-
-	.lemon-photo-1 {
-		position: absolute;
-		top: 3rem;
-		left: 4rem;
-		z-index: 2;
-	}
-
-	.lemon-photo-2 {
-		position: absolute;
-		bottom: 2rem;
-		left: 14rem;
-		z-index: 4;
-	}
-
-	.lemon-photo-3 {
-		position: absolute;
-		bottom: 6rem;
-		right: 7rem;
-		z-index: 3;
-	}
-
-	.lemon-photo-4 {
-		position: absolute;
-		top: 1rem;
-		right: 6rem;
-		z-index: 1;
-	}
-
-}
-
-/*.grid-center {
-		display: grid;
-		grid-template-columns: 1fr repeat(3, minmax(0, 16rem)) 1fr;
-		gap: 1rem;
-		padding: 2rem 1rem;
-	}
-
-	.cards {
-		background-color: #D45837;
-	}
-
-	.cards article {
-		background-color: #ffffff;
-	}
-
-	.cards article:first-of-type {
-		grid-column: 2 / 3;
-	}
-
-	.cards article :not(img) {
-		padding: 0 2rem;
-	}
-
-
-	/* Section 3 - Large Text 
-	.large-text {
-		background-color: #46555C;
-		color: #ffffff;
-		font-size: 1.5rem;
-	}
-
-	.large-text div {
-		grid-column: 2 / 5;
-	}
-
-	.large-text h2 {
-		font-size: 3rem;
-	}
- */
+    
+    photo:hover img {
+        opacity: 1;
+    }
